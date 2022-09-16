@@ -1,5 +1,4 @@
 import { createGlobalStyle } from "styled-components";
-import shines from "../img/shine.png";
 
 const GlobalStyle = createGlobalStyle`
 
@@ -17,17 +16,29 @@ body {
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
     -moz-osx-font-smoothing: grayscale;
-    background-image: url(${shines}) repeat;
+
+    background-image: url('https://i.imgur.com/6j4G4uX.png');
+    background-repeat: repeat;
 }
 
 button {
     cursor: pointer;
 }
 
+::-moz-selection {
+  color: #fff;
+  background: #6FA597;
+}
+
+::selection {
+color: #fff;
+  background: #6FA597;
+}
+
 #root {
     margin: 0 auto;
 }
 
-`
+`;
 
-export default GlobalStyle
+export default GlobalStyle;
