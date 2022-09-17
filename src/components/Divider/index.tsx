@@ -5,8 +5,12 @@ class Divider extends React.Component {
   render() {
     return (
       <ContainerDivider>
-        <div></div>
-        <div></div>
+        <div>
+          <div />
+        </div>
+        <div>
+          <div />
+        </div>
       </ContainerDivider>
     );
   }

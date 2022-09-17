@@ -7,26 +7,36 @@ export const ContainerDivider = styled.div`
   justify-content: center;
 
   & > div:nth-child(1) {
-    height: ${convertToRem(60)};
-    width: ${convertToRem(300)};
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  & > div:nth-child(1) div {
+    position: relative;
+    top: -${convertToRem(100)};
+    height: ${convertToRem(50)};
+    width: ${convertToRem(200)};
     background-color: #efe0e8;
     border-radius: 40px;
   }
 
-  & > div:nth-child(2) {
-    height: ${convertToRem(60)};
-    width: ${convertToRem(300)};
+  & > div:nth-child(2) div {
+    position: relative;
+    top: -${convertToRem(10)};
+    height: ${convertToRem(50)};
+    width: ${convertToRem(200)};
     background-color: #8fb5ab;
     border-radius: 40px;
   }
 
   @media screen and (max-width: 992px) {
-    & > div:nth-child(1) {
+    & > div:nth-child(1) div {
       height: ${convertToRem(40)};
       width: ${convertToRem(200)};
     }
 
-    & > div:nth-child(2) {
+    & > div:nth-child(2) div {
       height: ${convertToRem(40)};
       width: ${convertToRem(200)};
     }
